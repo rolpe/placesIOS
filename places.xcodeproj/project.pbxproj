@@ -13,6 +13,8 @@
 		694D9B231CE65F1D008F5B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694D9B211CE65F1D008F5B48 /* Main.storyboard */; };
 		694D9B251CE65F1D008F5B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694D9B241CE65F1D008F5B48 /* Assets.xcassets */; };
 		694D9B281CE65F1D008F5B48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694D9B261CE65F1D008F5B48 /* LaunchScreen.storyboard */; };
+		694D9B301CE66B2D008F5B48 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694D9B2F1CE66B2D008F5B48 /* roundedButton.swift */; };
+		694D9B321CE67108008F5B48 /* MiamiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694D9B311CE67108008F5B48 /* MiamiDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		694D9B241CE65F1D008F5B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694D9B271CE65F1D008F5B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694D9B291CE65F1D008F5B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694D9B2F1CE66B2D008F5B48 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
+		694D9B311CE67108008F5B48 /* MiamiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiamiDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				694D9B241CE65F1D008F5B48 /* Assets.xcassets */,
 				694D9B261CE65F1D008F5B48 /* LaunchScreen.storyboard */,
 				694D9B291CE65F1D008F5B48 /* Info.plist */,
+				694D9B2F1CE66B2D008F5B48 /* roundedButton.swift */,
+				694D9B311CE67108008F5B48 /* MiamiDetailViewController.swift */,
 			);
 			path = places;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 				694D9B201CE65F1D008F5B48 /* SecondViewController.swift in Sources */,
 				694D9B1C1CE65F1C008F5B48 /* AppDelegate.swift in Sources */,
 				694D9B1E1CE65F1D008F5B48 /* FirstViewController.swift in Sources */,
+				694D9B301CE66B2D008F5B48 /* roundedButton.swift in Sources */,
+				694D9B321CE67108008F5B48 /* MiamiDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
