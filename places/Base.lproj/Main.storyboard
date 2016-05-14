@@ -34,35 +34,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miami BG" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-wE-YWg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-41-Cc0">
-                                <rect key="frame" x="20" y="28" width="214" height="268"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-41-Cc0">
+                                <rect key="frame" x="20" y="132" width="214" height="171"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cya-ls-HIj">
-                                        <rect key="frame" x="0.0" y="0.0" width="77" height="62"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-Av-4KI">
-                                                <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                                <size key="shadowOffset" width="-1" height="1"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SURF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At6-9U-qbH">
-                                                <rect key="frame" x="0.0" y="21" width="77" height="21"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <size key="shadowOffset" width="-1" height="1"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NIGHTLIFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-12-uw8">
-                                                <rect key="frame" x="0.0" y="41" width="77" height="21"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                                <nil key="highlightedColor"/>
-                                                <size key="shadowOffset" width="-1" height="1"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="3cI-8L-edH">
-                                        <rect key="frame" x="0.0" y="81" width="214" height="134"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MIAMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxn-Sp-Tcd">
                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="69"/>
@@ -70,16 +46,61 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="1" height="0.0"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="69"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="69"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="69"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="69"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="69"/>
+                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BEACH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uai-Gq-4eh">
                                                 <rect key="frame" x="0.0" y="53" width="214" height="81"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="70"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="53" width="214" height="81"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="53" width="214" height="81"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="53" width="214" height="81"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="53" width="214" height="81"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="53" width="214" height="81"/>
+                                                </variation>
                                             </label>
                                         </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="134"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="134"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="134"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="134"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="134"/>
+                                        </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Nv0-65-2qo">
-                                        <rect key="frame" x="0.0" y="233" width="108" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Nv0-65-2qo">
+                                        <rect key="frame" x="0.0" y="136" width="102" height="35"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miami Icon" translatesAutoresizingMaskIntoConstraints="NO" id="0Mf-jy-Dug">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -89,16 +110,46 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLORIDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-lQ-xj0">
-                                                <rect key="frame" x="44" y="0.0" width="64" height="35"/>
+                                                <rect key="frame" x="38" y="0.0" width="64" height="35"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="136" width="102" height="35"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="136" width="102" height="35"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="136" width="102" height="35"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="136" width="102" height="35"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="136" width="102" height="35"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="50" width="214" height="171"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="665" width="214" height="171"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="665" width="214" height="171"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="665" width="214" height="171"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="665" width="214" height="171"/>
+                                </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="v1Q-YM-vRv">
-                                <rect key="frame" x="173" y="461" width="255" height="31"/>
+                                <rect key="frame" x="173" y="475" width="255" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-NQ-OHA" customClass="roundedButton" customModule="places" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
@@ -129,10 +180,96 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cya-ls-HIj">
+                                <rect key="frame" x="20" y="55" width="77" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-Av-4KI">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SURF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At6-9U-qbH">
+                                        <rect key="frame" x="0.0" y="21" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="21" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="21" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="21" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="21" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="21" width="77" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NIGHTLIFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-12-uw8">
+                                        <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="77" height="62"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="55" width="77" height="62"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="55" width="77" height="62"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="55" width="77" height="62"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="55" width="77" height="62"/>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="R6R-wE-YWg" secondAttribute="trailing" id="0YH-OV-34c"/>
+                            <constraint firstItem="zWZ-41-Cc0" firstAttribute="top" secondItem="cya-ls-HIj" secondAttribute="bottom" constant="18" id="2hM-zZ-XQO"/>
+                            <constraint firstItem="cya-ls-HIj" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="35" id="2nT-Pz-Fhl"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstItem="R6R-wE-YWg" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="9Nd-aS-V6X"/>
                             <constraint firstItem="v1Q-YM-vRv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AV4-3M-PuS"/>
@@ -143,12 +280,18 @@
                             <constraint firstItem="R6R-wE-YWg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="dao-on-E1h"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="cya-ls-HIj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="jGN-S7-fE3"/>
                             <constraint firstItem="v1Q-YM-vRv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="kyv-LH-7Nd"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="v1Q-YM-vRv" secondAttribute="bottom" constant="59" id="qLM-2d-SVm"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="v1Q-YM-vRv" secondAttribute="bottom" constant="45" id="qLM-2d-SVm">
+                                <variation key="heightClass=compact-widthClass=compact" constant="3"/>
+                            </constraint>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="v1Q-YM-vRv" secondAttribute="bottom" constant="65" id="wsM-cr-5bb"/>
+                            <constraint firstItem="zWZ-41-Cc0" firstAttribute="top" secondItem="cya-ls-HIj" secondAttribute="bottom" constant="8" id="zjs-yY-AGe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="2hM-zZ-XQO"/>
+                                <exclude reference="DJ0-sc-oto"/>
                                 <exclude reference="kyv-LH-7Nd"/>
                                 <exclude reference="wsM-cr-5bb"/>
                             </mask>
@@ -172,27 +315,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miami Detail" translatesAutoresizingMaskIntoConstraints="NO" id="nJm-q6-KgP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miami Detail" translatesAutoresizingMaskIntoConstraints="NO" id="nJm-q6-KgP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="123"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="179" id="vZV-rP-6EP"/>
+                                    <constraint firstAttribute="height" constant="123" id="wq5-MX-i17">
+                                        <variation key="heightClass=compact" constant="60"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT MIAMI BEACH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-xK-Ae6">
-                                <rect key="frame" x="166" y="76" width="269" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="269" id="SZS-fp-LWr"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="nTG-nd-n0Q"/>
-                                    <constraint firstAttribute="height" constant="27" id="vXe-WZ-wVb"/>
-                                    <constraint firstAttribute="width" constant="269" id="vao-if-xn5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjz-5j-rA9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjz-5j-rA9">
                                 <rect key="frame" x="20" y="20" width="45" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -200,17 +333,324 @@
                                     <action selector="backBtnPressed:" destination="NNi-H5-g0p" eventType="touchUpInside" id="y6s-eO-bL9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT MIAMI BEACH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-xK-Ae6">
+                                <rect key="frame" x="166" y="55" width="269" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="3EW-b5-VH0"/>
+                                    <constraint firstAttribute="width" constant="269" id="bCo-Cz-vfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="esR-kZ-30m">
+                                <rect key="frame" x="20" y="131" width="360" height="338"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F9a-pS-C01">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="POPULATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjU-oa-9HX">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" 88,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMp-lA-gtJ">
+                                                <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-71-vSC">
+                                        <rect key="frame" x="0.0" y="68" width="360" height="159"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8g-7L-g6s">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-3S-czs">
+                                                <rect key="frame" x="0.0" y="17" width="360" height="142"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="142" id="60A-Zb-ma7">
+                                                        <variation key="heightClass=compact" constant="100"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="110"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="220"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="360" id="o4r-4n-zqb">
+                                                        <variation key="heightClass=compact" constant="500"/>
+                                                        <variation key="widthClass=compact" constant="300"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="500" id="stn-6h-2xh">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="700"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <string key="text">In 1870 Henry Lum and son Charles arrived by sailboat on the large sandbar off the southeast Florida coast, and were so impressed by the island they landed on that they bought from the federal government, for $.25 an acre, most of the island and property further north.
+
+Lum would later sell the property to fellow New Jerseyites Elnathan Field and Ezra Osborne, who, in turn would sell the land to John S. Collins and his son-in-law, Thomas Pancoast, who were also from New Jersey.
+
+In 1913, Collins and Carl Fisher, who had made his fortune from his invention and later sale of the Presto-o-Lite Corporation and the Indianapolis Motor Speedway, embarked on an agriculture venture on the beachfront land. Fisher loaned Collins the money he needed to complete the first bridge from Miami to Miami Beach that same year and the bridge, at the time the longest wooden bridge in the world, would be the catalyst for the 1915 incorporation of Miami Beach.
+
+The great boom of the 1920’s would see enormous growth, while during the Depression, new groups from the northeast would build many small hotels along lower Collins Avenue and Ocean Drive. This building boom helped bring the area out of the Depression and forty years later that area of Miami Beach would become the famous Art Deco District, known the world over as "South Beach" or "SoBe."
+
+During World War II 500,000 Army Air Corps cadets passed through Miami Beach when it became a major training center. Many of these servicemen returned to make the area their permanent home after the war. By the end of the 1950s, South Florida had doubled its pre-war population.
+
+When Fidel Castro took over Cuba in 1959, the revolution radically changed South Florida as half a million Cubans poured into the area. The 1980s and early 90s brought a massive infusion of investment capital that has produced a reborn Miami Beach. Although it has changed almost beyond recognition (again), Miami Beach has thrived amidst that change and overcome many difficulties as it continues to be an international mecca for travel, business, and permanent residents.</string>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="stn-6h-2xh"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="22" width="500" height="100"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="o4r-4n-zqb"/>
+                                                        <include reference="stn-6h-2xh"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="300" height="142"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="500" height="100"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="700" height="110"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="300" height="220"/>
+                                                </variation>
+                                            </textView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="53" width="500" height="122"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES" spacing="-5">
+                                            <rect key="frame" x="0.0" y="60" width="300" height="159"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="45" width="500" height="117"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="53" width="700" height="127"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="89" width="300" height="237"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="o9K-bH-72H">
+                                        <rect key="frame" x="0.0" y="252" width="186" height="86"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THINGS TO DO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvb-qh-eG8">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" Stroll down Ocean Drive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZO-bD-IV9">
+                                                <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" Chill at the beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8X-4H-pUf">
+                                                <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" Hit the clubs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSe-Ba-l9b">
+                                                <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="185" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="236" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="164" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="190" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="372" width="186" height="86"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" misplaced="YES" spacing="10">
+                                    <rect key="frame" x="20" y="68" width="500" height="271"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES" spacing="17">
+                                    <rect key="frame" x="20" y="131" width="300" height="322"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES" spacing="2">
+                                    <rect key="frame" x="20" y="68" width="500" height="250"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="68" width="700" height="276"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES" spacing="32">
+                                    <rect key="frame" x="20" y="131" width="300" height="458"/>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nJm-q6-KgP" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leading" id="6nr-j6-BdB"/>
-                            <constraint firstItem="nJm-q6-KgP" firstAttribute="top" secondItem="nF4-rT-3O9" secondAttribute="top" id="NUi-ns-O3B"/>
-                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="centerX" secondItem="nF4-rT-3O9" secondAttribute="centerX" id="U6l-L6-Wyq"/>
-                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" constant="56" id="WMk-Ag-o1j"/>
-                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" constant="56" id="j6p-gD-cz8"/>
-                            <constraint firstAttribute="trailing" secondItem="nJm-q6-KgP" secondAttribute="trailing" id="ni5-LU-Q6K"/>
-                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="centerX" secondItem="nF4-rT-3O9" secondAttribute="centerX" id="yYR-xF-j4B"/>
+                            <constraint firstItem="esR-kZ-30m" firstAttribute="top" secondItem="nJm-q6-KgP" secondAttribute="bottom" constant="8" id="2op-gq-gnv"/>
+                            <constraint firstItem="esR-kZ-30m" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leadingMargin" id="6Gc-5f-M2X"/>
+                            <constraint firstItem="nJm-q6-KgP" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leading" id="CHw-1c-JCa"/>
+                            <constraint firstItem="pjz-5j-rA9" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" id="D9U-0M-eN2"/>
+                            <constraint firstItem="pjz-5j-rA9" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leadingMargin" id="H3o-ce-3eO"/>
+                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="centerX" secondItem="nF4-rT-3O9" secondAttribute="centerX" id="OkC-RU-erI"/>
+                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="nF4-rT-3O9" secondAttribute="topMargin" constant="90" id="PvK-Ge-1oj">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="nJm-q6-KgP" secondAttribute="trailing" id="cV4-Ve-bmY"/>
+                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" constant="35" id="fE2-IS-zh8">
+                                <variation key="heightClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="esR-kZ-30m" firstAttribute="centerX" secondItem="nF4-rT-3O9" secondAttribute="centerX" id="hUU-ve-xrn"/>
+                            <constraint firstItem="nJm-q6-KgP" firstAttribute="top" secondItem="nF4-rT-3O9" secondAttribute="top" id="wsp-Wl-L2M"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hUU-ve-xrn"/>
+                                <exclude reference="PvK-Ge-1oj"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zi8-7d-fUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,25 +697,6 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Q06-2e-ohd">
-            <objects>
-                <viewController id="58a-Ov-cpk" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SVJ-HV-7z0"/>
-                        <viewControllerLayoutGuide type="bottom" id="YHf-cl-A7l"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1vb-OG-ZIn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kFx-L7-HMu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cKh-eG-XPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="0.0" y="894"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -289,7 +710,6 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="58a-Ov-cpk" kind="relationship" relationship="viewControllers" id="HKZ-lc-6Rt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
