@@ -6,6 +6,24 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Miami Photos View Controller-->
+        <scene sceneID="2uL-Kj-Sjg">
+            <objects>
+                <viewController title="Miami Photos View Controller" id="2BT-Ba-wqo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zrv-5T-THT"/>
+                        <viewControllerLayoutGuide type="bottom" id="rzl-wP-wEa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3M2-C4-xLP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gx-IN-U0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-1041"/>
+        </scene>
         <!--Miami Beach-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -633,24 +651,22 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                         <constraints>
                             <constraint firstItem="esR-kZ-30m" firstAttribute="top" secondItem="nJm-q6-KgP" secondAttribute="bottom" constant="8" id="2op-gq-gnv"/>
                             <constraint firstItem="esR-kZ-30m" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leadingMargin" id="6Gc-5f-M2X"/>
+                            <constraint firstItem="pjz-5j-rA9" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" id="AdA-FD-Gf5"/>
                             <constraint firstItem="nJm-q6-KgP" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leading" id="CHw-1c-JCa"/>
-                            <constraint firstItem="pjz-5j-rA9" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" id="D9U-0M-eN2"/>
                             <constraint firstItem="pjz-5j-rA9" firstAttribute="leading" secondItem="nF4-rT-3O9" secondAttribute="leadingMargin" id="H3o-ce-3eO"/>
                             <constraint firstItem="0v2-xK-Ae6" firstAttribute="centerX" secondItem="nF4-rT-3O9" secondAttribute="centerX" id="OkC-RU-erI"/>
                             <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="nF4-rT-3O9" secondAttribute="topMargin" constant="90" id="PvK-Ge-1oj">
                                 <variation key="heightClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="nJm-q6-KgP" secondAttribute="trailing" id="cV4-Ve-bmY"/>
-                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" constant="35" id="fE2-IS-zh8">
-                                <variation key="heightClass=compact" constant="10"/>
-                            </constraint>
                             <constraint firstItem="esR-kZ-30m" firstAttribute="centerX" secondItem="nF4-rT-3O9" secondAttribute="centerX" id="hUU-ve-xrn"/>
+                            <constraint firstItem="0v2-xK-Ae6" firstAttribute="top" secondItem="XT0-OR-lPa" secondAttribute="bottom" constant="35" id="sNO-Bt-SAp"/>
                             <constraint firstItem="nJm-q6-KgP" firstAttribute="top" secondItem="nF4-rT-3O9" secondAttribute="top" id="wsp-Wl-L2M"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="hUU-ve-xrn"/>
                                 <exclude reference="PvK-Ge-1oj"/>
+                                <exclude reference="hUU-ve-xrn"/>
                             </mask>
                         </variation>
                     </view>
@@ -688,6 +704,9 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                                         <state key="normal" title="ABOUT">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3RN-Wc-fJr" kind="show" id="Mkj-yF-9yi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8m-aa-yKv" customClass="RoundedButton" customModule="places" customModuleProvider="target">
                                         <rect key="frame" x="155" y="0.0" width="100" height="31"/>
@@ -716,6 +735,9 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                                                 <nil key="highlightedColor"/>
                                                 <variation key="widthClass=compact">
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="60"/>
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuN-aK-igW">
@@ -914,12 +936,358 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--NYC Detail View Controller-->
+        <scene sceneID="y82-TF-2du">
+            <objects>
+                <viewController title="NYC Detail View Controller" id="3RN-Wc-fJr" customClass="NYCDetailViewController" customModule="places" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WbN-EE-PuN"/>
+                        <viewControllerLayoutGuide type="bottom" id="uXu-PP-xG9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Be6-pz-PkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NYC Detail" translatesAutoresizingMaskIntoConstraints="NO" id="k33-dv-lJE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="C0k-ff-T25">
+                                        <variation key="heightClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-HW-m29">
+                                <rect key="frame" x="20" y="20" width="45" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="20" width="36" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="3RN-Wc-fJr" eventType="touchUpInside" id="SBK-iW-56o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT NEW YORK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXs-by-3T4">
+                                <rect key="frame" x="166" y="55" width="269" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="cmQ-wA-gyh"/>
+                                    <constraint firstAttribute="width" constant="269" id="gHm-AC-zx9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="M6d-53-jPC">
+                                <rect key="frame" x="20" y="131" width="360" height="336"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r02-Vz-Dla">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="43"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="POPULATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqr-zs-nsY">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" 8.5 Million" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzi-tH-auc">
+                                                <rect key="frame" x="0.0" y="22" width="117" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="109" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="21" width="105" height="21"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="43"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="41"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="siR-Nh-J62">
+                                        <rect key="frame" x="0.0" y="68" width="360" height="159"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Z-bA-XQq">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWr-1C-a5V">
+                                                <rect key="frame" x="0.0" y="17" width="360" height="142"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="500" id="2yL-Gz-xGl">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="700"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="142" id="Fse-sh-QUk">
+                                                        <variation key="heightClass=compact" constant="100"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="110"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="220"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="360" id="TkK-aF-1zb">
+                                                        <variation key="heightClass=compact" constant="500"/>
+                                                        <variation key="widthClass=compact" constant="300"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <mutableString key="text">The first native New Yorkers were the Lenape, an Algonquin people who hunted, fished and farmed in the area between the Delaware and Hudson rivers. Europeans began to explore the region at the beginning of the 16th century–among the first was Giovanni da Verrazzano, an Italian who sailed up and down the Atlantic coast in search of a route to Asia–but none settled there until 1624. That year, the Dutch West India Company sent some 30 families to live and work in a tiny settlement on “Nutten Island” (today’s Governors Island) that they called New Amsterdam. In 1626, the settlement’s governor general, Peter Minuit, purchased the much larger Manhattan Island from the natives for 60 guilders in trade goods such as tools, farming equipment, cloth and wampum (shell beads). Fewer than 300 people lived in New Amsterdam when the settlement moved to Manhattan. But it grew quickly, and in 1760 the city (now called New York City; population 18,000) surpassed Boston to become the second-largest city in the American colonies. Fifty years later, with a population 202,589, it became the largest city in the Western hemisphere. Today, more than 8 million people live in the city’s five boroughs.</mutableString>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="2yL-Gz-xGl"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="22" width="500" height="100"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="TkK-aF-1zb"/>
+                                                        <include reference="2yL-Gz-xGl"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="300" height="142"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="500" height="100"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="17" width="700" height="110"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="16" width="300" height="220"/>
+                                                </variation>
+                                            </textView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="53" width="500" height="122"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES" spacing="-5">
+                                            <rect key="frame" x="0.0" y="60" width="300" height="159"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="45" width="500" height="117"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="53" width="700" height="127"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="73" width="300" height="236"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Jii-z0-9kl">
+                                        <rect key="frame" x="0.0" y="251" width="185" height="85"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THINGS TO DO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2Q-kM-r7b">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" See a Broadway show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWX-r6-RNJ">
+                                                <rect key="frame" x="0.0" y="22" width="185" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="22" width="186" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="21" width="189" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" Shop on 5th Avenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-W0-7eP">
+                                                <rect key="frame" x="0.0" y="43" width="169" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="43" width="136" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="41" width="138" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" See the Landmarks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-ME-tyZ">
+                                                <rect key="frame" x="0.0" y="64" width="162" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="65" width="99" height="22"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="62" width="101" height="21"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="185" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="236" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="164" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="190" width="186" height="86"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="341" width="189" height="82"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" misplaced="YES" spacing="10">
+                                    <rect key="frame" x="20" y="68" width="500" height="271"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES" spacing="17">
+                                    <rect key="frame" x="20" y="131" width="300" height="322"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES" spacing="2">
+                                    <rect key="frame" x="20" y="68" width="500" height="250"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="68" width="700" height="276"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES" spacing="32">
+                                    <rect key="frame" x="20" y="131" width="300" height="423"/>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k33-dv-lJE" firstAttribute="top" secondItem="Be6-pz-PkZ" secondAttribute="top" id="3Ob-dH-iHE"/>
+                            <constraint firstItem="M6d-53-jPC" firstAttribute="leading" secondItem="Be6-pz-PkZ" secondAttribute="leadingMargin" id="L7c-GD-omy"/>
+                            <constraint firstItem="hWb-HW-m29" firstAttribute="top" secondItem="WbN-EE-PuN" secondAttribute="bottom" id="QAx-pE-P2b"/>
+                            <constraint firstItem="HXs-by-3T4" firstAttribute="top" secondItem="Be6-pz-PkZ" secondAttribute="topMargin" constant="90" id="UwN-8A-U4d">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="k33-dv-lJE" secondAttribute="trailing" id="bdE-Hn-aSN"/>
+                            <constraint firstItem="k33-dv-lJE" firstAttribute="leading" secondItem="Be6-pz-PkZ" secondAttribute="leading" id="exI-1B-cuJ"/>
+                            <constraint firstItem="HXs-by-3T4" firstAttribute="top" secondItem="WbN-EE-PuN" secondAttribute="bottom" constant="35" id="xMW-h8-SpU"/>
+                            <constraint firstItem="M6d-53-jPC" firstAttribute="centerX" secondItem="Be6-pz-PkZ" secondAttribute="centerX" id="xrq-uD-aQu"/>
+                            <constraint firstItem="M6d-53-jPC" firstAttribute="top" secondItem="k33-dv-lJE" secondAttribute="bottom" constant="8" id="y3l-kb-tv2"/>
+                            <constraint firstItem="HXs-by-3T4" firstAttribute="centerX" secondItem="Be6-pz-PkZ" secondAttribute="centerX" id="yJi-sj-M4a"/>
+                            <constraint firstItem="hWb-HW-m29" firstAttribute="leading" secondItem="Be6-pz-PkZ" secondAttribute="leadingMargin" id="ywn-JZ-tmZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UwN-8A-U4d"/>
+                                <exclude reference="xrq-uD-aQu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Mp-me-ezu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="360"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Miami BG" width="1920" height="1200"/>
         <image name="Miami Detail" width="1920" height="1200"/>
         <image name="Miami Icon" width="512" height="512"/>
         <image name="NYC BG" width="5364" height="3491"/>
+        <image name="NYC Detail" width="1920" height="690"/>
         <image name="NYC Icon-1" width="3097" height="3689"/>
         <image name="apple" width="22" height="22"/>
         <image name="sun" width="30" height="30"/>
