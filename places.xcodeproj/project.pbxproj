@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690F2C651CEA2546003B749A /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690F2C641CEA2546003B749A /* PageItemController.swift */; };
+		690F2C671CEA27AA003B749A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690F2C661CEA27AA003B749A /* PageViewController.swift */; };
 		693FDDBE1CE92875003C5AEC /* NYCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693FDDBD1CE92875003C5AEC /* NYCDetailViewController.swift */; };
 		694D9B1C1CE65F1C008F5B48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694D9B1B1CE65F1C008F5B48 /* AppDelegate.swift */; };
 		694D9B1E1CE65F1D008F5B48 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694D9B1D1CE65F1D008F5B48 /* FirstViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		690F2C641CEA2546003B749A /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		690F2C661CEA27AA003B749A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		693FDDBD1CE92875003C5AEC /* NYCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NYCDetailViewController.swift; sourceTree = "<group>"; };
 		694D9B181CE65F1C008F5B48 /* places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694D9B1B1CE65F1C008F5B48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				694D9B2F1CE66B2D008F5B48 /* RoundedButton.swift */,
 				694D9B311CE67108008F5B48 /* MiamiDetailViewController.swift */,
 				693FDDBD1CE92875003C5AEC /* NYCDetailViewController.swift */,
+				690F2C641CEA2546003B749A /* PageItemController.swift */,
+				690F2C661CEA27AA003B749A /* PageViewController.swift */,
 			);
 			path = places;
 			sourceTree = "<group>";
@@ -149,9 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				693FDDBE1CE92875003C5AEC /* NYCDetailViewController.swift in Sources */,
+				690F2C671CEA27AA003B749A /* PageViewController.swift in Sources */,
 				694D9B201CE65F1D008F5B48 /* SecondViewController.swift in Sources */,
 				694D9B1C1CE65F1C008F5B48 /* AppDelegate.swift in Sources */,
 				694D9B1E1CE65F1D008F5B48 /* FirstViewController.swift in Sources */,
+				690F2C651CEA2546003B749A /* PageItemController.swift in Sources */,
 				694D9B301CE66B2D008F5B48 /* RoundedButton.swift in Sources */,
 				694D9B321CE67108008F5B48 /* MiamiDetailViewController.swift in Sources */,
 			);

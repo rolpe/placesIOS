@@ -6,23 +6,62 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Miami Photos View Controller-->
-        <scene sceneID="2uL-Kj-Sjg">
+        <!--Page View Controller-->
+        <scene sceneID="9S0-Xi-eBw">
             <objects>
-                <viewController title="Miami Photos View Controller" id="2BT-Ba-wqo" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PhotosController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Naj-Dc-3Fv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1A-Tv-IOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202" y="0.0"/>
+        </scene>
+        <!--Page Item Controller-->
+        <scene sceneID="ENu-7i-Ose">
+            <objects>
+                <viewController storyboardIdentifier="ItemController" title="Page Item Controller" id="0As-aK-Ka9" customClass="PageItemController" customModule="places" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zrv-5T-THT"/>
-                        <viewControllerLayoutGuide type="bottom" id="rzl-wP-wEa"/>
+                        <viewControllerLayoutGuide type="top" id="1Ef-uc-PPh"/>
+                        <viewControllerLayoutGuide type="bottom" id="qYq-oF-NQa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3M2-C4-xLP">
+                    <view key="view" contentMode="scaleToFill" id="7pi-oB-uw1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Igf-Ho-41s">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kL-EC-oxb">
+                                <rect key="frame" x="20" y="28" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="L6c-ym-vLo"/>
+                                    <constraint firstAttribute="height" constant="30" id="eCp-WQ-95Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="aPQ-RK-Ecu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Igf-Ho-41s" firstAttribute="leading" secondItem="7pi-oB-uw1" secondAttribute="leading" id="B2r-lJ-WhB"/>
+                            <constraint firstItem="qYq-oF-NQa" firstAttribute="top" secondItem="Igf-Ho-41s" secondAttribute="bottom" id="Ghf-id-2XI"/>
+                            <constraint firstItem="7kL-EC-oxb" firstAttribute="top" secondItem="1Ef-uc-PPh" secondAttribute="bottom" constant="8" id="XUY-eZ-TgL"/>
+                            <constraint firstItem="Igf-Ho-41s" firstAttribute="top" secondItem="7pi-oB-uw1" secondAttribute="top" id="ahO-bF-NkB"/>
+                            <constraint firstAttribute="trailing" secondItem="Igf-Ho-41s" secondAttribute="trailing" id="kUS-Rd-Alh"/>
+                            <constraint firstItem="7kL-EC-oxb" firstAttribute="leading" secondItem="7pi-oB-uw1" secondAttribute="leadingMargin" id="vI0-jJ-p7k"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentImageView" destination="Igf-Ho-41s" id="PL9-OT-AIE"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8gx-IN-U0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qku-es-aqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-1041"/>
+            <point key="canvasLocation" x="2971" y="0.0"/>
         </scene>
         <!--Miami Beach-->
         <scene sceneID="hNz-n2-bh7">
@@ -195,6 +234,9 @@
                                         <state key="normal" title="PHOTOS">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="photosBtnPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="mOD-b2-51Q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -321,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-343"/>
         </scene>
         <!--Miami Detail View Controller-->
         <scene sceneID="XYO-Ti-A5r">
@@ -665,15 +707,15 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="PvK-Ge-1oj"/>
                                 <exclude reference="hUU-ve-xrn"/>
+                                <exclude reference="PvK-Ge-1oj"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zi8-7d-fUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="-320"/>
+            <point key="canvasLocation" x="1489" y="-343"/>
         </scene>
         <!--New York City-->
         <scene sceneID="wg7-f3-ORb">
@@ -719,6 +761,9 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                                         <state key="normal" title="PHOTOS">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="photosBtnPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="NbR-BC-zxl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1084,7 +1129,7 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                                                         <variation key="widthClass=compact" constant="300"/>
                                                     </constraint>
                                                 </constraints>
-                                                <mutableString key="text">The first native New Yorkers were the Lenape, an Algonquin people who hunted, fished and farmed in the area between the Delaware and Hudson rivers. Europeans began to explore the region at the beginning of the 16th century–among the first was Giovanni da Verrazzano, an Italian who sailed up and down the Atlantic coast in search of a route to Asia–but none settled there until 1624. That year, the Dutch West India Company sent some 30 families to live and work in a tiny settlement on “Nutten Island” (today’s Governors Island) that they called New Amsterdam. In 1626, the settlement’s governor general, Peter Minuit, purchased the much larger Manhattan Island from the natives for 60 guilders in trade goods such as tools, farming equipment, cloth and wampum (shell beads). Fewer than 300 people lived in New Amsterdam when the settlement moved to Manhattan. But it grew quickly, and in 1760 the city (now called New York City; population 18,000) surpassed Boston to become the second-largest city in the American colonies. Fifty years later, with a population 202,589, it became the largest city in the Western hemisphere. Today, more than 8 million people live in the city’s five boroughs.</mutableString>
+                                                <string key="text">The first native New Yorkers were the Lenape, an Algonquin people who hunted, fished and farmed in the area between the Delaware and Hudson rivers. Europeans began to explore the region at the beginning of the 16th century–among the first was Giovanni da Verrazzano, an Italian who sailed up and down the Atlantic coast in search of a route to Asia–but none settled there until 1624. That year, the Dutch West India Company sent some 30 families to live and work in a tiny settlement on “Nutten Island” (today’s Governors Island) that they called New Amsterdam. In 1626, the settlement’s governor general, Peter Minuit, purchased the much larger Manhattan Island from the natives for 60 guilders in trade goods such as tools, farming equipment, cloth and wampum (shell beads). Fewer than 300 people lived in New Amsterdam when the settlement moved to Manhattan. But it grew quickly, and in 1760 the city (now called New York City; population 18,000) surpassed Boston to become the second-largest city in the American colonies. Fifty years later, with a population 202,589, it became the largest city in the Western hemisphere. Today, more than 8 million people live in the city’s five boroughs.</string>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1097,8 +1142,8 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <rect key="frame" x="0.0" y="22" width="500" height="100"/>
                                                     <mask key="constraints">
-                                                        <exclude reference="TkK-aF-1zb"/>
                                                         <include reference="2yL-Gz-xGl"/>
+                                                        <exclude reference="TkK-aF-1zb"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="widthClass=compact" misplaced="YES">
@@ -1271,15 +1316,15 @@ When Fidel Castro took over Cuba in 1959, the revolution radically changed South
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="UwN-8A-U4d"/>
                                 <exclude reference="xrq-uD-aQu"/>
+                                <exclude reference="UwN-8A-U4d"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mp-me-ezu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="360"/>
+            <point key="canvasLocation" x="1489" y="360"/>
         </scene>
     </scenes>
     <resources>

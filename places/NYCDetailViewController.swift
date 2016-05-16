@@ -9,10 +9,6 @@
 import UIKit
 
 class NYCDetailViewController: UIViewController {
-
-    @IBAction func backBtnPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +21,9 @@ class NYCDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backBtnPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
